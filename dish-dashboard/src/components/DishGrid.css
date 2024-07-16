@@ -1,0 +1,28 @@
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .dish-grid > * {
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .dish-grid > *:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .dish-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dish-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  

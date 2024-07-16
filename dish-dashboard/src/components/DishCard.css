@@ -1,0 +1,55 @@
+/* DishCard.css */
+.dish-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s;
+  width: 150px;
+  margin: 10px;
+}
+
+.dish-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dish-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  object-fit: cover; /* Ensures the image covers the area properly */
+}
+
+.dish-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dish-name {
+  margin: 0;
+  color: #555;
+  font-size: 18px; /* Ensured consistent font size */
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.toggle-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
